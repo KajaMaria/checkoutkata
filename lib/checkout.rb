@@ -2,7 +2,10 @@
 class Checkout
 
     def scan(item)
-        50
-    end 
-    
-end 
+        return 50 if item == "A"
+        return 30 if item == "B"
+    end
+
+
+
+end
