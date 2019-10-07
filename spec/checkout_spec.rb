@@ -5,7 +5,7 @@ describe Checkout do
         expect(subject.scan("A")).to eq(50)
     end
 
-    it 'returns 80 for one A and one B' do
+    it 'returns 30 for B' do
       expect(subject.scan("B")).to eq(30)
     end
 end

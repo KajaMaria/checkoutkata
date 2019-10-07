@@ -1,11 +1,14 @@
 
 class Checkout
 
+  def initialize
+    @prices = {
+      "A" => 50,
+      "B" => 30
+    }
+  end
+
     def scan(item)
-        return 50 if item == "A"
-        return 30 if item == "B"
+        return @prices[item]
     end
-
-
-
 end
